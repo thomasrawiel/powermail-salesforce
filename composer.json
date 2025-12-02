@@ -1,0 +1,32 @@
+{
+  "name": "traw/powermail-salesforce",
+  "description": "Add a finisher to send data to salesforce",
+  "type": "typo3-cms-extension",
+  "keywords": [
+    "TYPO3 CMS",
+    "Powermail",
+    "Salesforce"
+  ],
+  "authors": [
+    {
+      "name": "Thomas Rawiel",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "typo3/cms-core": "^12.4.18 || ^13.4",
+    "in2code/powermail": "^12.0 || ^13 || dev-master"
+  },
+  "license": "GPL-3.0-or-later",
+  "autoload": {
+    "psr-4": {
+      "TRAW\\PowermailSalesforce\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "powermail_salesforce"
+    }
+  }
+}
