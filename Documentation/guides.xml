@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guides xmlns="https://www.phpdoc.org/guides" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.phpdoc.org/guides ../vendor/phpdocumentor/guides-cli/resources/schema/guides.xsd"
+        links-are-relative="true"
+        default-code-language="php"
+>
+    <project title="powermail-salesforce"
+             release="main"
+             version="main"
+             copyright="Thomas Rawiel &amp; Contributors "
+    />
+    <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
+               project-home="&lt;project-home&gt;"
+               project-repository="https://github.com/thomasrawiel/powermail-salesforce/"
+               project-issues="https://github.com/thomasrawiel/powermail-salesforce/issues"
+               edit-on-github-branch="main"
+               edit-on-github="thomasrawiel/powermail-salesforce"
+               typo3-core-preferred="13.4"
+               interlink-shortcode="thomasrawiel/powermail-salesforce"
+    />
+</guides>
