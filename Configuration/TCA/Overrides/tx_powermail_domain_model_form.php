@@ -7,6 +7,7 @@ call_user_func(function ($_EXTKEY = 'lin_salesforce', string $table = 'tx_powerm
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns($table, [
         'sf_enable' => [
+            'exclude' => true,
             'label' => $LLL . ':tca.' . $table . '.sf_enable',
             'description' => $LLL . ':tca.' . $table . '.sf_enable.description',
             'config' => [
@@ -20,6 +21,7 @@ call_user_func(function ($_EXTKEY = 'lin_salesforce', string $table = 'tx_powerm
             'onChange' => 'reload',
         ],
         'sf_oid' => [
+            'exclude' => true,
             'label' => $LLL . ':tca.' . $table . '.sf_oid',
             'description' => $LLL . ':tca.' . $table . '.sf_oid.description',
             'config' => [
@@ -33,6 +35,7 @@ call_user_func(function ($_EXTKEY = 'lin_salesforce', string $table = 'tx_powerm
             'displayCond' => 'FIELD:sf_enable:REQ:true',
         ],
         'sf_doubleoptin' => [
+            'exclude' => true,
             'label' => $LLL . ':tca.' . $table . '.sf_doubleoptin',
             'description' => $LLL . ':tca.' . $table . '.sf_doubleoptin.description',
             'config' => [

@@ -7,6 +7,7 @@ call_user_func(function ($_EXTKEY = 'lin_salesforce', string $table = 'tx_powerm
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns($table, [
         'sf_fieldname' => [
+            'exclude' => true,
             'label' => $LLL . ':tca.' . $table . '.sf_fieldname',
             'description' => $LLL . ':tca.' . $table . '.sf_fieldname.description',
             'config' => [
