@@ -1,0 +1,4 @@
+name: traw/powermail-salesforce
+label: 'Powermail Salesforce Finisher'
+dependencies:
+  - in2code/powermail-main

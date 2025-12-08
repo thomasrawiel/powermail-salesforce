@@ -1,0 +1,25 @@
+categories:
+  powermailsalesforce:
+    label: Powermail Captcha
+
+settings:
+  plugin.tx_powermailsalesforce.targetUrl:
+    type: string
+    default: 'https://login.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8'
+    label: Target URL
+    category: powermailsalesforce
+  plugin.tx_powermailsalesforce.debug.enable:
+    type: bool
+    default: '0'
+    label: Enable Debug mode
+    category: powermailsalesforce
+  plugin.tx_powermailsalesforce.debug.targetUrl:
+    type: string
+    default: 'abcdef'
+    label: Debug target url (Sandbox)
+    category: powermailsalesforce
+  plugin.tx_powermailsalesforce.debug.email:
+    type: string
+    default: ''
+    label: Debug email address
+    category: powermailsalesforce
