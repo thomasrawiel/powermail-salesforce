@@ -1,0 +1,15 @@
+plugin.tx_powermail.settings.setup {
+    finishers {
+        1 {
+            class = TRAW\PowermailSalesforce\Finisher\SalesforceFinisher
+            config {
+                targetUrl = {$plugin.tx_powermailsalesforce.settings.targetUrl}
+                debug {
+                    enable = {$plugin.tx_powermailsalesforce.settings.debug.enable}
+                    targetUrl = {$plugin.tx_powermailsalesforce.settings.debug.targetUrl}
+                    email = {$plugin.tx_powermailsalesforce.settings.debug.email}
+                }
+            }
+        }
+    }
+}

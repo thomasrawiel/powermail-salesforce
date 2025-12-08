@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2021-09-08T18:49:00Z"
+          product-name="powermail_salesforce">
+        <header/>
+        <body>
+            <trans-unit id="sf_paletteLabel" resname="sf_paletteLabel">
+                <source>Salesforce Options</source>
+            </trans-unit>
+            <trans-unit id="tca.tx_powermail_domain_model_form.sf_enable" resname="tca.tx_powermail_domain_model_form.sf_enable">
+                <source>Use Salesforce Finisher</source>
+            </trans-unit>
+            <trans-unit id="tca.tx_powermail_domain_model_form.sf_enable.description" resname="tca.tx_powermail_domain_model_form.sf_enable.description">
+                <source>The submitted data for this form should also be sent to Salesforce. Make sure to fill in the salesforce fieldnames for each field that should be transferred.</source>
+            </trans-unit>
+            <trans-unit id="tca.tx_powermail_domain_model_form.sf_oid" resname="tca.tx_powermail_domain_model_form.sf_oid">
+                <source>Salesforce Organization ID (OID)</source>
+            </trans-unit>
+            <trans-unit id="tca.tx_powermail_domain_model_form.sf_oid.description" resname="tca.tx_powermail_domain_model_form.sf_oid.description">
+                <source></source>
+            </trans-unit>
+            <trans-unit id="tca.tx_powermail_domain_model_field.sf_fieldname" resname="tca.tx_powermail_domain_model_field.sf_fieldname">
+                <source>Salesforce field name</source>
+            </trans-unit>
+            <trans-unit id="tca.tx_powermail_domain_model_field.sf_fieldname.description" resname="tca.tx_powermail_domain_model_field.sf_fieldname.description">
+                <source>The field name that is used to transfer this fields data to Salesforce</source>
+            </trans-unit>
+            <trans-unit id="tca.tx_powermail_domain_model_form.sf_doubleoptin" resname="tca.tx_powermail_domain_model_form.sf_doubleoptin">
+                <source>Double Opt-in</source>
+            </trans-unit>
+            <trans-unit id="tca.tx_powermail_domain_model_form.sf_doubleoptin.description" resname="tca.tx_powermail_domain_model_form.sf_doubleoptin.description">
+                <source>If enabled, salesforce will be instructed to send a confirmation email (double opt-in)</source>
+            </trans-unit>
+            <trans-unit id="tca.tx_powermail_domain_model_form.sf_doubleoptin.checked" resname="tca.tx_powermail_domain_model_form.sf_doubleoptin.checked">
+                <source>Enable double opt-in</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

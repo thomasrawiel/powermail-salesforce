@@ -1,0 +1,14 @@
+tx_powermail.flexForm.addField.settings\.flexform\.main\.returnPageUid {
+    _sheet = main
+    label = Return URL (Salesforce)
+    config {
+        type = group
+        allowed = pages
+        size = 1
+        maxitems = 1
+        minitems = 0
+        show_thumbs = 1
+    }
+}
+
+

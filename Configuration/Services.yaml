@@ -1,0 +1,22 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  TRAW\PowermailSalesforce\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'
+  
+  TRAW\PowermailSalesforce\Service\RequestService:
+    public: true
+
+  TRAW\PowermailSalesforce\Domain\Model\Field:
+    tags:
+      - name: 'extender.extends'
+        class: In2code\Powermail\Domain\Model\Field
+
+  TRAW\PowermailSalesforce\Domain\Model\Form:
+    tags:
+      - name: 'extender.extends'
+        class: In2code\Powermail\Domain\Model\Form

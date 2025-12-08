@@ -1,0 +1,14 @@
+plugin.tx_powermailsalesforce {
+    settings {
+        #cat=PowermailSalesforce/basic/a; type=string; label=Target URL
+        targetUrl = https://login.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
+
+        debug {
+            #cat=PowermailSalesforce/advanced/a; type=boolean; label=Enable debug mode
+            enable = 0
+            targetUrl = https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
+            #cat=PowermailSalesforce/advanced/a; type=string; label=Debug email address
+            email =
+        }
+    }
+}
