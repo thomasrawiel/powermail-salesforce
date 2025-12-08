@@ -72,7 +72,7 @@ class SalesforceFinisher extends \In2code\Powermail\Finisher\AbstractFinisher
         ]);
 
         $requestURl = $this->configuration['debug']['enable'] ? $this->configuration['debug']['targetUrl'] : $this->configuration['targetUrl'];
-        if (str_starts_with($requestURl, 'https://webto.salesforce.com') === false) {
+        if (str_starts_with($requestURl, 'https://webto.salesforce.com') === true) {
             $requestURl = $this->dataCollectionService->ensureOrgIdInUrl($requestURl, $data['oid']);
         }
 
