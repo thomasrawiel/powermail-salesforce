@@ -6,8 +6,9 @@ plugin.tx_powermailsalesforce {
         debug {
             #cat=PowermailSalesforce/advanced/a; type=boolean; label=Enable debug mode
             enable = 0
+            #cat=PowermailSalesforce/advanced/b; type=string; label=Debug target url (Sandbox)
             targetUrl = https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8
-            #cat=PowermailSalesforce/advanced/a; type=string; label=Debug email address
+            #cat=PowermailSalesforce/advanced/c; type=string; label=Debug email address
             email =
         }
     }
