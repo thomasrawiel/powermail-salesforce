@@ -23,7 +23,7 @@
                 <source>Salesforce field name</source>
             </trans-unit>
             <trans-unit id="tca.tx_powermail_domain_model_field.sf_fieldname.description" resname="tca.tx_powermail_domain_model_field.sf_fieldname.description">
-                <source>The field name that is used to transfer this fields data to Salesforce</source>
+                <source>The field name that is used to transfer this fields data to Salesforce. Leave empty to exclude the field from the data transfer to Salesforce.</source>
             </trans-unit>
             <trans-unit id="tca.tx_powermail_domain_model_form.sf_doubleoptin" resname="tca.tx_powermail_domain_model_form.sf_doubleoptin">
                 <source>Double Opt-in</source>

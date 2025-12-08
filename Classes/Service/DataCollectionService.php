@@ -70,8 +70,6 @@ class DataCollectionService
 
             if(!empty($sfFieldName)) {
                 $data[$sfFieldName] = $sfFieldName === 'email' || $field->isSenderEmail() ? strtolower($answer->getValue()) : $answer->getValue();
-            }else {
-                $data[$field->getUid()] = 'field invalid';
             }
         }
     }
