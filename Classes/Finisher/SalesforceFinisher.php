@@ -44,18 +44,19 @@ class SalesforceFinisher extends \In2code\Powermail\Finisher\AbstractFinisher
 
         // @extensionScannerIgnoreLine
         $contentObjectData = $this->contentObject->data;
-        $returnPageUid = $this->contentObject->data['pid'];
-        if (!empty($this->settings['main']['returnPageUid'])) {
-            $returnPageUid = $this->settings['main']['returnPageUid'];
-        }
+        
         if(isset($this->settings['thx']['redirect'])) {
            $returnPageUid = $this->settings['thx']['redirect'];
+        }elseif(!empty($this->settings['main']['returnPageUid'])) {
+            $returnPageUid = $this->settings['main']['returnPageUid'];
+        }else{
+            $returnPageUid = $contentObjectData['pid'];
         }
 
         $returnUrl = $this->contentObject->typoLink_URL([
             'parameter' => $returnPageUid,
-            'additionalParams' => '&L=' . $this->contentObject->data['sys_language_uid'] ?? 0,
-            'section' => empty($this->settings['main']['returnPageUid']) ? $this->contentObject->data['uid'] : '',
+            'additionalParams' => '&L=' . $contentObjectData['sys_language_uid'] ?? 0,
+            'section' => empty($this->settings['main']['returnPageUid']) ? $contentObjectData['uid'] : '',
             'forceAbsoluteUrl' => true,
         ]);
 
