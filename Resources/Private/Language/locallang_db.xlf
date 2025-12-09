@@ -25,15 +25,6 @@
             <trans-unit id="tca.tx_powermail_domain_model_field.sf_fieldname.description" resname="tca.tx_powermail_domain_model_field.sf_fieldname.description">
                 <source>The field name that is used to transfer this fields data to Salesforce. Leave empty to exclude the field from the data transfer to Salesforce.</source>
             </trans-unit>
-            <trans-unit id="tca.tx_powermail_domain_model_form.sf_doubleoptin" resname="tca.tx_powermail_domain_model_form.sf_doubleoptin">
-                <source>Double Opt-in</source>
-            </trans-unit>
-            <trans-unit id="tca.tx_powermail_domain_model_form.sf_doubleoptin.description" resname="tca.tx_powermail_domain_model_form.sf_doubleoptin.description">
-                <source>If enabled, salesforce will be instructed to send a confirmation email (double opt-in)</source>
-            </trans-unit>
-            <trans-unit id="tca.tx_powermail_domain_model_form.sf_doubleoptin.checked" resname="tca.tx_powermail_domain_model_form.sf_doubleoptin.checked">
-                <source>Enable double opt-in</source>
-            </trans-unit>
         </body>
     </file>
 </xliff>

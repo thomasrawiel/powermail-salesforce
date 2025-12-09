@@ -9,8 +9,6 @@ class Form extends \In2code\Powermail\Domain\Model\Form
 
     protected int $sfEnable = 0;
 
-    protected int $sfDoubleoptin = 0;
-
     public function getSfOid(): string
     {
         return $this->sfOid;
@@ -31,22 +29,11 @@ class Form extends \In2code\Powermail\Domain\Model\Form
         $this->sfEnable = $sfEnable;
     }
 
-    public function getSfDoubleoptin(): int
-    {
-        return $this->sfDoubleoptin;
-    }
-
-    public function setSfDoubleoptin(int $sfDoubleoptin): void
-    {
-        $this->sfDoubleoptin = $sfDoubleoptin;
-    }
-
     public function getSfFormProperties(): array
     {
         return [
             'enable' => $this->sfEnable,
             'oid' => $this->sfOid,
-            'doubleoptin' => $this->sfDoubleoptin,
         ];
     }
 }

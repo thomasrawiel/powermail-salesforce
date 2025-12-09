@@ -23,13 +23,6 @@ Enter your Salesforce Organization ID / orgId / OID. This is required if you ena
     `How to find your OID <https://help.salesforce.com/s/articleView?id=000385215&type=1>`_
 
 
-Double Opt-in
-~~~
-
-This is enabled by default.
-
-If disabled, an additional **lead_source** value (Single-Opt-in) is transmitted. If you haven't setup a Single-Opt-in lead_source, you can ignore this setting and leave it enabled.
-
 .. figure:: ../Images/Editor/FormDisabled.jpg
    :class: with-shadow
    :alt: Configuration in a Form when Salesforce Finisher is disabled

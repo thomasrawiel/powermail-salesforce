@@ -47,12 +47,11 @@ class DataCollectionService
             /** @var Form $form */
             return $form->getSfFormProperties();
         } else {
-            $formProperties = $this->getFieldFromDb($form, ['sf_oid', 'sf_enable','sf_doubleoptin']);
+            $formProperties = $this->getFieldFromDb($form, ['sf_oid', 'sf_enable']);
 
             return [
                 'enable' => (bool)($formProperties['sf_enable'] ?? false),
                 'oid' => $formProperties['sf_oid'] ?? null,
-                'doubleoptin' => (bool)($formProperties['sf_doubleoptin'] ?? false),
             ];
         }
     }

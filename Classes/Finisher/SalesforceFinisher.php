@@ -60,15 +60,8 @@ class SalesforceFinisher extends \In2code\Powermail\Finisher\AbstractFinisher
             'forceAbsoluteUrl' => true,
         ]);
 
-
-        $leadSource = ['Web-to-Lead'];
-        if ($formProperties['doubleoptin'] === false) {
-            $leadSource[] = 'Single-Opt-in';
-        }
-
         $data = $this->dataCollectionService->collectDataFromPowermailAnswers([
             'oid' => $formProperties['oid'],
-            'lead_source' => implode(' ', $leadSource),
             'retURL' => $returnUrl,
         ]);
 

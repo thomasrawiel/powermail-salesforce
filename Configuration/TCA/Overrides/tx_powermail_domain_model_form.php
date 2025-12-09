@@ -34,25 +34,12 @@ call_user_func(function ($_EXTKEY = 'lin_salesforce', string $table = 'tx_powerm
             ],
             'displayCond' => 'FIELD:sf_enable:REQ:true',
         ],
-        'sf_doubleoptin' => [
-            'exclude' => true,
-            'label' => $LLL . ':tca.' . $table . '.sf_doubleoptin',
-            'description' => $LLL . ':tca.' . $table . '.sf_doubleoptin.description',
-            'config' => [
-                'type' => 'check',
-                'renderType' => 'checkboxToggle',
-                'items' => [
-                    ['label' => $LLL . ':tca.' . $table . '.sf_doubleoptin.checked',],
-                ],
-                'default' => 1,
-            ],
-        ],
     ]);
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
         $table,
         'tx_linsalesforce_fields',
-        'sf_enable,sf_doubleoptin,--linebreak--,sf_oid'
+        'sf_enable,sf_oid'
     );
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(

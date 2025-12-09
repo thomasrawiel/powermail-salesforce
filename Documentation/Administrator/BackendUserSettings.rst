@@ -44,7 +44,7 @@ In the `Allowed excludefields` section of the same group, follow these steps to 
 
    - **Use Salesforce Finisher** (sf_enable) [tx_powermail_domain_model_form:sf_enable]
    - **Salesforce Organization ID** (OID) (sf_oid) [tx_powermail_domain_model_form:sf_oid]
-   - **Double Opt-in** (sf_doubleoptin) [tx_powermail_domain_model_form:sf_doubleoptin]
+
 
 .. figure:: ../Images/BeUser/ExcludeFieldsField.jpg
    :class: with-shadow
