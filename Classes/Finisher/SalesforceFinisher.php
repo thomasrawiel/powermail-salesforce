@@ -45,7 +45,7 @@ class SalesforceFinisher extends \In2code\Powermail\Finisher\AbstractFinisher
         // @extensionScannerIgnoreLine
         $contentObjectData = $this->contentObject->data;
 
-        if(isset($this->settings['thx']['redirect'])) {
+        if(!empty($this->settings['thx']['redirect'])) {
            $returnPageUid = $this->settings['thx']['redirect'];
         }elseif(!empty($this->settings['main']['returnPageUid'])) {
             $returnPageUid = $this->settings['main']['returnPageUid'];
