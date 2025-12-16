@@ -10,7 +10,7 @@ powermail-salesforce
     powermail_salesforce
 
 :Package name:
-    traw/powermailcaptcha
+    traw/powermail-salesforce
 
 :Version:
     1.0.0
